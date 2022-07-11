@@ -1,4 +1,4 @@
-export { default as Calender } from "./Calender.jsx";
+export { default as Calendar } from "./Calendar.jsx";
 export { default as ColorPicker } from "./ColorPicker.jsx";
 export { default as Customers } from "./Customers.jsx";
 export { default as Ecommerce } from "./Ecommerce.jsx";

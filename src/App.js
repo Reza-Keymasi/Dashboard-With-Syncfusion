@@ -10,7 +10,7 @@ import { Footer, Navbar, Sidebar, ThemeSettings } from "./components/Index.jsx"
 
 // Pages
 import { 
-  Calender, ColorPicker, Customers, Ecommerce, Editor, Employees, Orders, Kanban,
+  Calendar, ColorPicker, Customers, Ecommerce, Editor, Employees, Orders, Kanban,
   Area, Bar, ColorMapping, Financial, Line, Pie, Pyramid, Stacked 
 } from "./pages/Index.jsx"
 
@@ -78,7 +78,7 @@ const App = () => {
               {/* Apps */}
               <Route path="/kanban" element={<Kanban />} />
               <Route path="/editor" element={<Editor />} />
-              <Route path="/calender" element={<Calender />} />
+              <Route path="/calendar" element={<Calendar />} />
               <Route path="/color-picker" element={<ColorPicker />} />
 
               {/* Charts */}
