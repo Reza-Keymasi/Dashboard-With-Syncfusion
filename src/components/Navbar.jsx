@@ -35,7 +35,7 @@ const NavButton = ({ title, customFunc, icon, color, dotColor }) => (
 const Navbar = () => {
 
   const { activeMenu, setActiveMenu, isClicked, setIsClicked,
-  handleClick,screenSize, setScreenSize } = useStateContext();
+  handleClick,screenSize, setScreenSize, currentColor} = useStateContext();
 
 // This useEffects are for control the open and close state of sidebar when user works with small screen
 // but it needs a reload
@@ -62,21 +62,21 @@ const Navbar = () => {
     <div className="flex justify-between p-2 md:mx-6 relative">
         <NavButton title="Menu" customFunc={() => 
         setActiveMenu((prevActiveMenu) => (!prevActiveMenu))}
-        color="blue" icon={<AiOutlineMenu />} />
+        color={currentColor} icon={<AiOutlineMenu />} />
 
         <div className="flex">
           <NavButton title="Cart" customFunc={() => handleClick("cart")}
-          color="blue" icon={<FiShoppingCart />} />
+          color={currentColor} icon={<FiShoppingCart />} />
         </div>
 
         <div className="flex">
           <NavButton title="Chat" customFunc={() => handleClick("chat")}
-          color="blue" dotColor="#09c9d7" icon={<BsChatLeft />} />
+          color={currentColor} dotColor="#09c9d7" icon={<BsChatLeft />} />
         </div>
 
         <div className="flex">
           <NavButton title="Notification" customFunc={() => handleClick("notification")}
-          color="blue" dotColor="#09c9d7" icon={<RiNotification3Line />} />
+          color={currentColor} dotColor="#09c9d7" icon={<RiNotification3Line />} />
         </div>
 
         <TooltipComponent content="Profile" position="BottomCenter">
