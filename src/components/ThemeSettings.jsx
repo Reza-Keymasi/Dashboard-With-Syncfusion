@@ -4,7 +4,7 @@ import { BsCheck } from "react-icons/bs";
 
 import { TooltipComponent } from "@syncfusion/ej2-react-popups"
 
-import { themeColors, ThemeColors } from "../data/Data";
+import { themeColors } from "../data/Data";
 
 import { useStateContext } from "../contexts/ContextProvider"
 

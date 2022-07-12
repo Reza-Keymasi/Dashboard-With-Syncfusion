@@ -11,6 +11,6 @@ export { default as  Notification } from "./Notification.jsx";
 export { default as Header } from "./Header.jsx";
 export { default as  ChartsHeader } from "./ChartsHeader.jsx";
 export { default as  LineChart } from "./charts/LineChart.jsx";
-export { default as  Pie } from "./charts/Pie.jsx";
+export { default as  PieChart } from "./charts/PieChart.jsx";
 export { default as  SparkLine } from "./charts/SparkLine.jsx";
 export { default as  Stacked } from "./charts/Stacked.jsx";
